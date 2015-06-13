@@ -1,0 +1,586 @@
+[ 2015-04-09T09:04:34+08:00 ] 127.0.0.1 /CMS2.0/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002348s ]
+
+[ 2015-04-09T09:04:34+08:00 ] 127.0.0.1 /CMS2.0/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000447s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001130s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001335s ]
+
+[ 2015-04-09T09:04:34+08:00 ] 127.0.0.1 /CMS2.0/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001544s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000418s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000998s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001202s ]
+
+[ 2015-04-09T09:04:43+08:00 ] 127.0.0.1 /CMS2.0/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001149s ]
+SQL: SHOW COLUMNS FROM `cms_manager` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`manager` FROM `cms_manager` WHERE `manager` = 'admin' AND `password` = '7c4a8d09ca3762af61e59520943dc26494f8941b' LIMIT 1   [ RunTime:0.0284s ]
+SQL: UPDATE `cms_manager` SET `last_login`='1428541483',`last_ip`='2130706433' WHERE `id` = 1 [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001324s ]
+
+[ 2015-04-09T09:04:44+08:00 ] 127.0.0.1 /CMS2.0/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001453s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001527s ]
+
+[ 2015-04-09T09:04:44+08:00 ] 127.0.0.1 /CMS2.0/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000488s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001280s ]
+
+[ 2015-04-09T09:04:46+08:00 ] 127.0.0.1 /CMS2.0/Admin/Nav/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+NOTIC: [2048] Declaration of Admin\Model\NavModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\NavModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_nav` WHERE ( pid=0 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: p C:\wamp\www\CMS2.0\App\Admin\Model\NavModel.class.php 第 31 行.
+SQL: SELECT `id`,`name`,`info`,`sort` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000403s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000993s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001191s ]
+
+[ 2015-04-09T09:04:48+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+NOTIC: [2048] Declaration of Admin\Model\ChapterModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0049s ]
+NOTIC: [8] Undefined index: p C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0058s ]
+SQL: SELECT a.id,a.name,a.keyword,a.date,b.name as navname FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id ) ORDER BY date DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_chapter` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000620s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000982s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001202s ]
+
+[ 2015-04-09T09:04:49+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/addChapter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+NOTIC: [2048] Declaration of Admin\Model\NavModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\NavModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( pid=0 )  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 7  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 8  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 9  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 10  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 11  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 12  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 13  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 14  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 15  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000451s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020206s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001177s ]
+
+[ 2015-04-09T09:04:51+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+NOTIC: [2048] Declaration of Admin\Model\ChapterModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0524s ]
+NOTIC: [8] Undefined index: p C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0048s ]
+SQL: SELECT a.id,a.name,a.keyword,a.date,b.name as navname FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id ) ORDER BY date DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_chapter` LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000485s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2015-04-09T20:26:43+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001456s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp\www\CMS2.0\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001718s ]
+
+[ 2015-04-09T20:27:35+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/addChapterAfter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001458s ]
+NOTIC: [2048] Declaration of Admin\Model\ChapterModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.1580s ]
+SQL: INSERT INTO `cms_chapter` (`name`,`nav`,`tag`,`keyword`,`thumb`,`source`,`author`,`info`,`content`,`commend`,`read_count`,`sort`,`gold`,`limit`,`color`,`date`) VALUES ('伦敦爆惊天劫案：70个珠宝保险箱约2亿财宝被盗','2','伦敦|财宝','伦敦|财宝','./Uploads/2015-04-09/150_5526700397e4b.jpg','http://news.sina.com.cn/w/2015-04-09/083131697034.shtml','参考消息网','参考消息网4月9日报道 境外媒体称，英国伦敦发生惊天盗窃案，一伙大盗趁复活节假期犯案，潜入顶级珠宝业中心地区哈顿花园一间保险库公司，利用重型工具锯开金属门，巧妙避开高科技保安系统，直闯保险库。','&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;参考消息网4月9日报道 境外媒体称，英国伦敦发生惊天盗窃案，一伙大盗趁复活节假期犯案，潜入顶级珠宝业中心地区哈顿花园一间保险库公司，利用重型工具锯开金属门，巧妙避开高科技保安系统，直闯保险库。&lt;/p&gt;&lt;p&gt;　　香港《东方日报》4月9日报道，4天之间，窃匪清空大量保险箱，偷走财物总值或高达两亿英镑，可能是史上最严重失窃案之一。&lt;/p&gt;&lt;p&gt;　&lt;strong&gt;　趁复活节假作案&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　哈顿花园保险库公司的员工4月2日离开公司，准备度过4天假期，一伙窃匪伺机潜入公司所在大楼，利用充裕时间作案，偷走保险库内保险箱中的财物，包括大量钻石珠宝、重要文件和现金等，物主多为富商和珠宝商。该公司管理六百个保险箱，警方至今发现有70个保险箱被撬开。&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;据悉，窃匪先凿开大楼屋顶，沿着电梯槽，游绳下达至地库，然后用重型切割工具，剪开两排厚重的保安金属栏，并击破整幅后墙，再拆走墙上的闭路电视。他们破坏了前门的警报系统后，锯开保险库厚达四十五厘米的加固金属门，过程夸张得如电影桥段。&lt;/p&gt;&lt;p&gt;　　涉事公司的员工4月7日上班时才惊悉保险库失窃，随即报警。苏格兰场警方已派出专门处理持械劫案的特种部队调查案件，法证人员会调查他们如何令
+警报失灵，以及是否有内鬼提供线报等。保险库顾客沙阿表示，该公司只得一个入口，而保险库等重地则在地库，认为盗贼是精心策划犯案。&lt;/p&gt;&lt;p&gt;　&lt;strong&gt;　赃物恐已运海外&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　由于顾客一般不愿透露在保险箱中存放了何种贵重物品，警方或许无法计算出失窃总额。&lt;/p&gt;&lt;p&gt;　　另一名保险库顾客比恩透露，其友人存放了一颗价值570万港元的水钻在保险库，估计失窃财物总值逾一亿港元。有前特种部队主管估计，失窃财物总
+额可能高达23亿港元，相信窃匪得手后已将赃物运到海外。哈顿花园以贩卖钻石及金饰闻名，有至少五十五间珠宝店，是英国珠宝商密度最高的地区，自中古时代
+已是珠宝交易地。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1','1','13','2','0','','1428582455') [ RunTime:0.0673s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000392s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001450s ]
+
+[ 2015-04-09T20:27:38+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/addChapter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003975s ]
+NOTIC: [2048] Declaration of Admin\Model\NavModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\NavModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( pid=0 )  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 7  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 8  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 9  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 10  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 11  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 12  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 13  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 14  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 15  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000453s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001263s ]
+
+[ 2015-04-09T20:27:40+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001274s ]
+NOTIC: [2048] Declaration of Admin\Model\ChapterModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0047s ]
+NOTIC: [8] Undefined index: p C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0045s ]
+SQL: SELECT a.id,a.name,a.keyword,a.date,b.name as navname FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id ) ORDER BY date DESC LIMIT 0,10   [ RunTime:0.0403s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_chapter` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000404s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2015-04-09T20:28:51+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp\www\CMS2.0\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001252s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001536s ]
+
+[ 2015-04-09T20:29:58+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/addChapterAfter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+NOTIC: [2048] Declaration of Admin\Model\ChapterModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0066s ]
+SQL: INSERT INTO `cms_chapter` (`name`,`nav`,`tag`,`keyword`,`thumb`,`source`,`author`,`info`,`content`,`commend`,`read_count`,`sort`,`gold`,`limit`,`color`,`date`,`attr`) VALUES ('马花花！三大MVP被吊打 告诉你马刺多恐怖','2','NBA','NAB|马刺','./Uploads/2015-04-09/150_5526708362e4a.jpg','http://sports.sina.com.cn/nba/2015-04-09/11237569225.shtml','新浪体育讯','见谁灭谁，而且要灭就是大比分灭，这就是眼下马刺的真实写照。最近三战对卫冕冠军来说其实难度颇大，先对联盟第一的勇士，再对为季后赛拼命的雷霆，然后打西部第二的火箭。结果呢？三场比赛，马刺送上三场吊打，这支铁军所展现出的战斗力，让所有人恐惧。
+','&lt;p&gt;　&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;波波维奇太懂得如何在漫长的常规赛赛季中，合理安排手下球员们的体能和状态。前面一直打的不温不火，却在三月之后突然驶入快车道。&lt;strong&gt;过去22场，马刺19胜3负，其中两场失利是加时(有一场是加时输给了....。。尼克斯)。更恐怖的是，这19场胜利中，只有一场赢分不到两位数，3月初他们“只”赢了太阳9分，另外18胜都是两位数的吊打。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　马刺的超级强势让他们的拥趸已经忍不住高调起来，马刺官推在对火箭比赛中就发了一条炫富的推特：“&lt;strong&gt;过去12场比赛，我们有10场曾经领先了20分，其中有7场曾经领先25分。&lt;/strong&gt;”这种姿态让对手看了都恨得牙根痒痒。&lt;/p&gt;&lt;p&gt;　　但没办法，现在的马刺就是这么霸道，不管是勇士还是老鹰还是火箭，都曾在比赛中落后他们20分以上。现在的马刺无疑已经调试到了最佳状态，以莱
+昂纳德为新的攻防核心，邓肯依然是那个稳定的大轴，帕克逐渐找回状态，而一群配角各司其职，球队展现出的整体战斗力和化学反应超出联盟其他球队一筹。这样
+的马刺，季后赛谁想碰？&lt;/p&gt;&lt;p&gt;　　要说这段时间唯一真正从马刺手中逃生的，就是骑士了。当日凭借欧文的神奇发挥，骑士实现惊天逆转，客场加时险胜。如果总决赛会是那场比赛的重演，结局还会一样吗？&lt;/p&gt;&lt;p&gt;　　(毛毛)&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1','12','23','22','0','','1428582598','头条') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000424s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001120s ]
+
+[ 2015-04-09T20:30:00+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/addChapter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002270s ]
+NOTIC: [2048] Declaration of Admin\Model\NavModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\NavModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( pid=0 )  [ RunTime:0.0147s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 1  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 7  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 8  [ RunTime:0.0048s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 9  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 10  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 11  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 12  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 13  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 14  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 15  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000452s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023450s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2015-04-09T20:30:03+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001410s ]
+NOTIC: [2048] Declaration of Admin\Model\ChapterModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0061s ]
+NOTIC: [8] Undefined index: p C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0065s ]
+SQL: SELECT a.id,a.name,a.keyword,a.date,b.name as navname FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id ) ORDER BY date DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_chapter` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000403s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002115s ]
+
+[ 2015-04-09T20:30:03+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+NOTIC: [2048] Declaration of Admin\Model\ChapterModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0043s ]
+NOTIC: [8] Undefined index: p C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0056s ]
+SQL: SELECT a.id,a.name,a.keyword,a.date,b.name as navname FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id ) ORDER BY date DESC LIMIT 0,10   [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_chapter` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000400s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030378s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2015-04-09T20:30:58+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/addChapter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003157s ]
+NOTIC: [2048] Declaration of Admin\Model\NavModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\NavModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( pid=0 )  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 7  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 8  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 9  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 10  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 11  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 12  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 13  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 14  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 15  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000460s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000973s ]
+
+[ 2015-04-09T20:31:00+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+NOTIC: [2048] Declaration of Admin\Model\ChapterModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0058s ]
+NOTIC: [8] Undefined index: p C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0056s ]
+SQL: SELECT a.id,a.name,a.keyword,a.date,b.name as navname FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id ) ORDER BY date DESC LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_chapter` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000410s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2015-04-09T20:32:13+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp\www\CMS2.0\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001180s ]
+
+[ 2015-04-09T20:32:36+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/addChapterAfter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002338s ]
+NOTIC: [2048] Declaration of Admin\Model\ChapterModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0054s ]
+SQL: INSERT INTO `cms_chapter` (`name`,`nav`,`tag`,`keyword`,`thumb`,`source`,`author`,`info`,`content`,`commend`,`read_count`,`sort`,`gold`,`limit`,`color`,`date`) VALUES ('安徽万亩隆平超级稻减产绝收 监管单位下逐客令','0','隆平','隆平','./Uploads/2015-04-09/150_5526714d133a3.jpg','http://finance.sina.com.cn/china/dfjj/20150409/142521918356.shtml','南方周末','超级稻“Y两优900”经专家组验收，平均亩产1026.7公斤，创造了最新的水稻亩产世界纪录。这天是2014年10月10日。当时84岁的袁隆平站在湖南省红星村超级稻基地的稻田里宣布：“这标志着我国杂交水稻技术研究遥遥领先世界。”','&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;超级稻“Y两优900”经专家组验收，平均亩产1026.7公斤，创造了最新的水稻亩产世界纪录。这天是2014年10月10日。当时84岁的袁隆平站在湖南省红星村超级稻基地的稻田里宣布：“这标志着我国杂交水稻技术研究遥遥领先世界。”&lt;/p&gt;&lt;p&gt;　　可几乎同一时期，远在1000公里外的安徽蚌埠五河县小圩镇，69岁的农民贾文贤发现，他种植的超级稻二期主推品种“两优0293”有些不对劲：刚灌浆的稻子，该由青色变成喜人的金黄色，结果却慢慢变成了灰白色。十天后，灰白色的稻子全都耷拉了脑袋，死了。&lt;/p&gt;&lt;p&gt;　　安徽省种子管理总站的调查结果显示，2014年10月，安徽蚌埠、安庆、合肥、滁州、马鞍山、淮南等六市种植的“两优0293”发生大面积减产、绝收，受灾面积超过万亩。&lt;/p&gt;&lt;p&gt;　　受灾农民质疑种子生产企业袁隆平农业高科技股份有限公司(以下简称隆平高科)涉嫌虚假宣传、隐瞒品种缺陷。&lt;/p&gt;&lt;p&gt;　　此后半年内，安徽省农业委员会下属的种子管理总站多次向国家农业部上书，要求重新审定超级稻“两优0293”的种植区域，希望“不再包含我省”。&lt;/p&gt;&lt;p&gt;　　这是一家省级农业监管单位在向超级稻明星品种下“逐客令”。&lt;/p&gt;&lt;p&gt;　　2015年3月以来，受灾农民与隆平高科在补偿数额上再起争端。&lt;/p&gt;&lt;p&gt;　　迄今为止，已有111个经农业部认定的超级稻品种推向市场。这些稻种是否真的像破世界纪录时那般“超级”？为全国增产增收贡献几许？为何在业内田间总是争议不断？&lt;/p&gt;&lt;p&gt;　　在这些答案背后，关于超级稻的内涵乃至国家粮食安全的定义都在悄然翻转。&lt;/p&gt;&lt;p&gt;　&lt;strong&gt;　“杂交稻，隆平造”&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　在五河县种子零售商常秀亮的店里，一张被放大的照片占了半壁墙。照片里十几个孩童与老人举着“两优0293”的牌子，咧着嘴笑。&lt;/p&gt;&lt;p&gt;　　这是2008年以来，每年都在五河县上演的“两优0293”产品推广会现场。隆平高科的业务员和种子经销商总是不厌其烦地宣扬“两优0293”
+的诸多优势：“适应性广、高产栽培可达900公斤以上”。讲完之后，每个到场者都会得到一件印着“杂交稻，隆平造”的黄色T恤。&lt;/p&gt;&lt;p&gt;　　凭借着袁隆平的名望和一场场推广会，“两优0293”很快成了五河县的明星产品。2014年，常秀亮一共卖出“两优0293”种子3541斤。&lt;/p&gt;&lt;p&gt;　　在益民农机专业合作社的门前，农民们回忆起刚种“两优0293”的景象：第一年，一亩地只要七八两种子，产量比过去的杂交稻品种涨了50公斤，达到每亩550公斤。之后几年，产量有所回落，一亩地也得用1斤多种子，但产量还算稳定。&lt;/p&gt;&lt;p&gt;　　与企业宣传的最大卖点不同，农民们看重的是超级稻的“稳产”，而不是“高产”。&lt;/p&gt;&lt;p&gt;　　实际上，尽管以袁隆平为代表的科研团队已将试验田中超级稻亩产量，从800公斤攀升到1000公斤以上，但中国水稻实际亩产却远远达不到这个水平。依据2014年国家统计局发布的《中国统计年鉴》计算，2013年，中国实际水稻平均亩产量仅为447.8公斤。&lt;/p&gt;&lt;p&gt;　　2014年10月，连这份“稳产”也被打破了。五河县种植该品种的八千多亩地全都变了颜色。穗子以下逐渐变灰乃至变黑，掐断了输送养分的通道。500公斤的产量变成了50公斤，甚至颗粒无收。&lt;/p&gt;&lt;p&gt;　　受灾民委托，五河县农委组织专家组鉴定表明，超级稻减产、绝收是因为得了稻瘟病。&lt;/p&gt;&lt;p&gt;　　大多数受灾农民因为还不了债，过年都躲了出去。种子经销商常秀亮被愤怒的乡亲们打了三次，受伤了也不敢去医院，怕暴露行踪。&lt;/p&gt;&lt;p&gt;　　灾难蔓延至安徽6市，种植“两优0293”的农田均出现不同程度的减产、绝收。&lt;/p&gt;&lt;p&gt;　　“仅这一个品种就对我省整个粮食的增产造成很大的影响。”安徽省种子管理总站副站长刘根告诉南方周末记者。作为农业输出大省的安徽，承担着粮食增产4万吨的国家任务。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1','2','35','1','0','','1428582756') [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000387s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000888s ]
+
+[ 2015-04-09T20:32:38+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/addChapter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+NOTIC: [2048] Declaration of Admin\Model\NavModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\NavModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( pid=0 )  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 7  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 8  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 9  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 10  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 11  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 12  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 13  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 14  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 15  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000448s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000907s ]
+
+[ 2015-04-09T20:32:41+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+NOTIC: [2048] Declaration of Admin\Model\ChapterModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0088s ]
+NOTIC: [8] Undefined index: p C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0045s ]
+SQL: SELECT a.id,a.name,a.keyword,a.date,b.name as navname FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id ) ORDER BY date DESC LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_chapter` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000439s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000948s ]
+

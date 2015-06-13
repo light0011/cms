@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    height: 100px;
+}
+
+.top p{
+    position: relative;
+    left: 140px;
+    top: 5px;
+    text-align: center;
+}
+
+.top .login_info{
+    position: relative;
+    top: 25px;
+    left: -140px;
+}
+
+.top .login_info a{
+    margin-left: 20px;
+}
+
+.menu{
+    position: relative;
+    top: -20px;
+    text-indent: 10px;
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+}
+
+.menu ul li a{ 
+    text-indent: 20px;
+    color: #337ab7;
+}
+
+.main {
+    float: left;
+    width: 80%;
+    margin-left: 15px;
+    height: 800px;
+}
+
+.main iframe{
+    width: 100%;
+    height: 100%;
+}

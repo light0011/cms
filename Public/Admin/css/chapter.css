@@ -1,0 +1,42 @@
+body{
+    height: auto;
+}
+table{
+    margin-top: 20px;
+    text-align: center;
+}
+
+table th{
+    text-align: center;
+}
+
+
+table a{
+    margin-left: 10px;
+}
+
+.page{
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+
+}
+
+.page a, .page span{
+    font-size: 16px;
+    display: block;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.page a:hover{
+    background: #ccc;
+}
+

@@ -1,0 +1,27 @@
+body{
+    padding-top: 50px;
+}
+
+.navbar-nav li{
+    width: 103px;
+    text-align: center;
+}
+
+.tab{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.tab a{
+    padding: 15px;
+}
+
+.nav_tab{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 20px;
+}

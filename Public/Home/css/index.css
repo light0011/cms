@@ -1,0 +1,120 @@
+
+.member_login{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.member_login h4{
+    position: relative;
+    top: -10px;
+    left: 20px;
+}
+
+.verify img{
+    width: 80px;
+    height: 35px;
+    position: relative;
+    left: -20px;
+    cursor: pointer;
+}
+
+.member dl{
+    float: left;
+}
+
+.carousel{
+    height: 264px;
+}
+
+.list-group a span{
+    float: right;
+}
+
+.vote h3{
+    color: #337ab7;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+}
+
+.vote label{
+    margin-left: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.vote .vote_button{
+    margin: 20px 0 28px 60px;
+}
+
+.vote .vote_button .btn-success{
+    margin-left: 90px;
+}
+
+.news_pic{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 1120px;
+}
+
+.news_pic h4{
+    position: relative;
+    top: -10px;
+}
+
+.news_pic dl{
+    margin-left: 35px;
+}
+
+.register_img{
+    position: relative;
+    left: 20px;
+    cursor: pointer;
+}
+
+.a{
+    text-align: center;
+}
+
+.b img{
+    margin: 20px 0 0 145px;
+    width: 72px;
+    height: 72px;
+}
+.user_link{
+    position: relative;
+    top: 50px;
+    height: 80px;
+    text-align: center;
+}
+
+/*.user_link a{
+    margin: 30px;
+}
+*/
+.user_image img{
+    display: block;
+    width: 72px;
+    height: 72px;
+    float: left;
+    margin-bottom: 11px;
+}
+
+.user_image p{
+    width: 72px;
+    text-align: center;
+}
+
+
+.login_button{
+    height: 200px;
+}
+
+.login_button button{
+    margin: 40px;
+}
+
+.news_title{
+    height: 369px;
+}
+

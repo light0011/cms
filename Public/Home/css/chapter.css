@@ -1,0 +1,82 @@
+.acticle h3{
+    text-align: center;
+}
+
+.d1{
+    margin: 20px 0 0 20px;
+    text-align: center;
+}
+.d1 span{
+    margin: 10px;
+}
+
+.d2{
+    margin:20px 0 20px 0;
+}
+.d2 p{
+    text-indent: 30px;
+    color: #999;
+}
+
+.d4 a{
+    font-size: 16px;
+    margin:10px;
+}
+
+.d5{
+    margin:20px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 30px 20px 20px 20px;
+}
+
+.d6{
+    margin: 20px 0 20px 0;
+}
+
+.red{
+    color: red;
+}
+
+.verify{
+    margin-top: 20px;
+}
+
+input[name='verify']{
+    position: relative;
+    left: -100px;
+}
+
+.comment_img{
+    cursor: pointer;
+    margin: 20px;
+}
+
+.media{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+.media img{
+    width: 72px;
+    height: 72px;
+}
+
+.media span{
+    float: right;
+    margin-top: 25px;
+    color: #999;
+}
+
+.media-body button{
+    margin: 20px 10px 10px 10px;
+}
+
+.comment_page a{
+    margin-left: 20px;
+}
+
+.list-group a{
+    font-size: 14px;
+}

@@ -1,0 +1,259 @@
+[ 2015-04-10T09:01:38+08:00 ] 127.0.0.1 /CMS2.0/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001124s ]
+
+[ 2015-04-10T09:01:39+08:00 ] 127.0.0.1 /CMS2.0/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000447s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001068s ]
+
+[ 2015-04-10T09:01:46+08:00 ] 127.0.0.1 /CMS2.0/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `cms_manager` [ RunTime:0.0854s ]
+SQL: SELECT `id`,`manager` FROM `cms_manager` WHERE `manager` = 'admin' AND `password` = '7c4a8d09ca3762af61e59520943dc26494f8941b' LIMIT 1   [ RunTime:0.0399s ]
+SQL: UPDATE `cms_manager` SET `last_login`='1428627706',`last_ip`='2130706433' WHERE `id` = 1 [ RunTime:0.0122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000962s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001131s ]
+
+[ 2015-04-10T09:01:47+08:00 ] 127.0.0.1 /CMS2.0/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000402s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000914s ]
+
+[ 2015-04-10T09:01:47+08:00 ] 127.0.0.1 /CMS2.0/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000358s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2015-04-10T09:01:50+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+NOTIC: [2048] Declaration of Admin\Model\ChapterModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0041s ]
+NOTIC: [8] Undefined index: p C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0038s ]
+SQL: SELECT a.id,a.name,a.keyword,a.date,b.name as navname FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id ) ORDER BY date DESC LIMIT 0,10   [ RunTime:0.0505s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_chapter` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000371s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000907s ]
+
+[ 2015-04-10T10:11:51+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/update/id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+NOTIC: [2048] Declaration of Admin\Model\ChapterModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0043s ]
+NOTIC: [2048] Declaration of Admin\Model\NavModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\NavModel.class.php 第 98 行.
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( pid=0 )  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 7  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 8  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 9  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 10  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 11  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 12  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 13  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 14  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 15  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`nav`,`attr`,`tag`,`keyword`,`thumb`,`source`,`author`,`info`,`content`,`commend`,`read_count`,`sort`,`gold`,`limit`,`color` FROM `cms_chapter` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000492s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2015-04-10T10:11:53+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/update/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+NOTIC: [2048] Declaration of Admin\Model\ChapterModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0048s ]
+NOTIC: [2048] Declaration of Admin\Model\NavModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\NavModel.class.php 第 98 行.
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( pid=0 )  [ RunTime:0.0011s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 7  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 8  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 9  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 10  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 11  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 12  [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 13  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 14  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE `pid` = 15  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`nav`,`attr`,`tag`,`keyword`,`thumb`,`source`,`author`,`info`,`content`,`commend`,`read_count`,`sort`,`gold`,`limit`,`color` FROM `cms_chapter` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000525s ]
+NOTIC: [8] Undefined index: id C:\wamp\www\CMS2.0\App\Runtime\Cache\Admin\3d2a1cd3e9ef9cdfb01faf8adfeba1f8.php 第 20 行.
+NOTIC: [8] Undefined index: name C:\wamp\www\CMS2.0\App\Runtime\Cache\Admin\3d2a1cd3e9ef9cdfb01faf8adfeba1f8.php 第 23 行.
+NOTIC: [8] Undefined index: nav C:\wamp\www\CMS2.0\App\Runtime\Cache\Admin\3d2a1cd3e9ef9cdfb01faf8adfeba1f8.php 第 30 行.
+NOTIC: [8] Undefined index: nav C:\wamp\www\CMS2.0\App\Runtime\Cache\Admin\3d2a1cd3e9ef9cdfb01faf8adfeba1f8.php 第 30 行.
+NOTIC: [8] Undefined index: nav C:\wamp\www\CMS2.0\App\Runtime\Cache\Admin\3d2a1cd3e9ef9cdfb01faf8adfeba1f8.php 第 30 行.
+NOTIC: [8] Undefined index: attr C:\wamp\www\CMS2.0\App\Runtime\Cache\Admin\3d2a1cd3e9ef9cdfb01faf8adfeba1f8.php 第 38 行.
+NOTIC: [8] Undefined index: tag C:\wamp\www\CMS2.0\App\Runtime\Cache\Admin\3d2a1cd3e9ef9cdfb01faf8adfeba1f8.php 第 51 行.
+NOTIC: [8] Undefined index: keyword C:\wamp\www\CMS2.0\App\Runtime\Cache\Admin\3d2a1cd3e9ef9cdfb01faf8adfeba1f8.php 第 55 行.
+NOTIC: [8] Undefined index: thumb C:\wamp\www\CMS2.0\App\Runtime\Cache\Admin\3d2a1cd3e9ef9cdfb01faf8adfeba1f8.php 第 61 行.
+NOTIC: [8] Undefined index: source C:\wamp\www\CMS2.0\App\Runtime\Cache\Admin\3d2a1cd3e9ef9cdfb01faf8adfeba1f8.php 第 69 行.
+NOTIC: [8] Undefined index: author C:\wamp\www\CMS2.0\App\Runtime\Cache\Admin\3d2a1cd3e9ef9cdfb01faf8adfeba1f8.php 第 73 行.
+NOTIC: [8] Undefined index: info C:\wamp\www\CMS2.0\App\Runtime\Cache\Admin\3d2a1cd3e9ef9cdfb01faf8adfeba1f8.php 第 78 行.
+NOTIC: [8] Undefined index: commend C:\wamp\www\CMS2.0\App\Runtime\Cache\Admin\3d2a1cd3e9ef9cdfb01faf8adfeba1f8.php 第 88 行.
+NOTIC: [8] Undefined index: read_count C:\wamp\www\CMS2.0\App\Runtime\Cache\Admin\3d2a1cd3e9ef9cdfb01faf8adfeba1f8.php 第 99 行.
+NOTIC: [8] Undefined index: sort C:\wamp\www\CMS2.0\App\Runtime\Cache\Admin\3d2a1cd3e9ef9cdfb01faf8adfeba1f8.php 第 103 行.
+NOTIC: [8] Undefined index: gold C:\wamp\www\CMS2.0\App\Runtime\Cache\Admin\3d2a1cd3e9ef9cdfb01faf8adfeba1f8.php 第 107 行.
+NOTIC: [8] Undefined index: limit C:\wamp\www\CMS2.0\App\Runtime\Cache\Admin\3d2a1cd3e9ef9cdfb01faf8adfeba1f8.php 第 113 行.
+NOTIC: [8] Undefined index: color C:\wamp\www\CMS2.0\App\Runtime\Cache\Admin\3d2a1cd3e9ef9cdfb01faf8adfeba1f8.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001164s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001490s ]
+
+[ 2015-04-10T10:11:59+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp\www\CMS2.0\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002744s ]
+
+[ 2015-04-10T10:12:02+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/updateChapterAfter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+NOTIC: [2048] Declaration of Admin\Model\ChapterModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0042s ]
+SQL: UPDATE `cms_chapter` SET `name`='斐济要澳新退出太平洋岛国论坛：让中国加入进',`nav`='2',`tag`='太平洋',`keyword`='太平洋',`thumb`='./Uploads/2015-04-10/150_5527316ec27bb.jpg',`source`='www.baidu.com',`author`='新闻社',`info`='                    澳大利亚和新西兰退出，或者让中国加入”，《新西兰先驱报》7日报道称，斐济总理弗兰克-姆拜尼马拉马近日公开要求终止新西兰和澳大利亚的太平洋岛国论坛正式会员资格。斐济外交部长重申，新西兰和澳大利亚应该从这个太平洋地区主要的议事和决策机构中被“踢出去”。文章分析称，“如果澳大利亚和新西兰不退出，姆拜尼马拉马希望其亲密盟友中国加入到这个有16个成员国的论坛组织中来”。                ',`content`='&lt;p style=&quot;margin: 10px 0px; padding: 0px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 14px; line-height: 25.2000007629395px; font-family: 宋体; word-wrap: break-word; color: rgb(51, 51, 51); letter-spacing: normal; orphans: auto; text-align: left; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;澳大利亚和新西兰退出，或者让中国加入”，《新西兰先驱报》7日报道称，斐济总理弗兰克-姆拜尼马拉马近日公开要求终止新西兰和澳大利亚的太平洋岛国论坛正式会员资格。斐济外交部长重申，新西兰和澳大利亚应该从这个太平洋地区主要的议事和决策机构中被“踢出去”。文章分析称，“如果澳大利亚和新西兰不退出，姆拜尼马拉马希望其亲密盟友中国加入到这个有16个成员国的论坛组织中来”。&lt;/p&gt;&lt;p style=&quot;margin: 10px 0px; padding: 0px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 14px; line-height: 25.2000007629395px; font-family: 宋体; word-wrap: break-word; color: rgb(51, 51, 51); letter-spacing: normal; orphans: auto; text-align: left; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;太平洋岛国论坛共有南太平洋14个岛国及澳大利亚和新西兰两国共16个正式成员国。该组织成立于1971年8月，名为“南太平洋论坛”，秘书处位于斐济苏瓦。2000年10月改名为“太平洋岛国论坛”。环太平洋地区的其它国家，包括中国、美国、日本等，都是该组织的“观察员国”。&lt;/p&gt;&lt;p style=&quot;margin: 10px 0px; padding: 0px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 14px; line-height: 25.2000007629395px; font-family: 宋体; word-wrap: break-word; color: rgb(51, 51, 51); letter-spacing: normal; orphans: auto; text-align: left; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;据《新西兰先驱报》7日报道，新西兰外长麦凯利对“驱逐”新西兰的要求表示反对，指出新西兰没有离开太平洋岛国论坛的意向，并强调新西兰和斐济在瓦努阿图救援行动中的合作，显示出两国正在打造更紧密的关系。&lt;/p&gt;&lt;p style=&quot;margin: 10px 0px; padding: 0px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 14px; line-height: 25.2000007629395px; font-family: 宋体; word-wrap: break-word; color: rgb(51, 51, 51); letter-spacing: normal; orphans: auto; text-align: left; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-indent: 2em; background-color: rgb(255, 255, 255);&quot;&gt;《澳大利亚人报》称，澳外长正在与斐济商讨这一问题。姆拜尼马拉马去年当选斐济总理后，曾要求将澳新在太平洋岛国论坛的会员资格降级为“观察员国”或“发展伙伴”。报道称，斐济在太平洋岛国论坛的参会资格曾于2009年被中止。时任太平洋岛国论坛轮值主席的纽埃总理塔拉吉，在斐济军事政府领导人姆拜尼马拉马拒绝公布举行全国大选日期的情况下，宣布中止斐济的参会资格。直到去年，太平洋岛国论坛才恢复了斐济的参会资格。（王淼）&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`commend`='1',`read_count`='1',`sort`='22',`gold`='2',`limit`='1',`color`='',`date`='1428631922',`attr`='头条' WHERE `id` = 8 [ RunTime:0.1006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001193s ]
+
+[ 2015-04-10T10:12:03+08:00 ] 127.0.0.1 /CMS2.0/Admin/Chapter/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+NOTIC: [2048] Declaration of Admin\Model\ChapterModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: p C:\wamp\www\CMS2.0\App\Admin\Model\ChapterModel.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0043s ]
+SQL: SELECT a.id,a.name,a.keyword,a.date,b.name as navname FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id ) ORDER BY date DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_chapter` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000901s ]
+

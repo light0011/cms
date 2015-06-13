@@ -1,0 +1,1 @@
+<div class="alert alert-success footer" role="alert">© 寒风天涯smile  Bootstrap &ThinkPHP</div>

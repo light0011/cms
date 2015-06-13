@@ -1,0 +1,63 @@
+
+.comment_img{
+    cursor: pointer;
+    margin: 20px;
+}
+
+.media{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+.media img{
+    width: 72px;
+    height: 72px;
+}
+
+.media span{
+    float: right;
+    margin-top: 25px;
+    color: #999;
+}
+
+.media-body button{
+    margin: 20px 10px 10px 10px;
+}
+
+.comment_page a{
+    margin-left: 20px;
+}
+
+.page{
+    margin: 30px auto;
+    text-align: center;
+    width: 300px;
+
+}
+
+.page a, .page span{
+    font-size: 16px;
+    display: block;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.page a:hover{
+    background: #ccc;
+}
+
+.alert-danger,.alert-info{
+    margin-top: 20px;
+}
+
+.list-group a span{
+    float: right;
+}

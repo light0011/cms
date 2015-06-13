@@ -1,0 +1,2927 @@
+[ 2015-04-13T08:35:26+08:00 ] 127.0.0.1 /CMS2.0/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0003s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000380s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000610s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000981s ]
+
+[ 2015-04-13T08:35:26+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001020s ]
+
+[ 2015-04-13T08:35:26+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001174s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001421s ]
+
+[ 2015-04-13T08:55:22+08:00 ] 127.0.0.1 /CMS2.0/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0006s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0006s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0003s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000653s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000887s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001239s ]
+
+[ 2015-04-13T08:55:23+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001220s ]
+
+[ 2015-04-13T08:55:23+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001197s ]
+
+[ 2015-04-13T08:56:53+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0038s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='233' WHERE `id` = 8 [ RunTime:0.0006s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 190 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 226 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0036s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=8 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=8 AND state=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000267s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8] Undefined index: name C:\wamp\www\CMS2.0\App\Runtime\Cache\Home\64929baaf6f7e29aa96805779363271b.php 第 126 行.
+NOTIC: [8] Undefined index: name C:\wamp\www\CMS2.0\App\Runtime\Cache\Home\64929baaf6f7e29aa96805779363271b.php 第 126 行.
+NOTIC: [8] Undefined index: name C:\wamp\www\CMS2.0\App\Runtime\Cache\Home\64929baaf6f7e29aa96805779363271b.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001085s ]
+
+[ 2015-04-13T08:57:04+08:00 ] 127.0.0.1 /CMS2.0/List/index/id/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cms_nav` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' AND `nav` IN ('25','26','27','28') ORDER BY date DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('25','26','27','28') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: ids C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0040s ]
+SQL: SELECT a.id,a.name,a.info,a.thumb,b.name as navName FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id AND b.id in(28,27,25,26) )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000516s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
+
+[ 2015-04-13T10:09:40+08:00 ] 127.0.0.1 /CMS2.0/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0002s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000430s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002896s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001155s ]
+
+[ 2015-04-13T10:09:40+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001413s ]
+
+[ 2015-04-13T10:09:40+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001244s ]
+
+[ 2015-04-13T10:10:08+08:00 ] 127.0.0.1 /CMS2.0/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0011s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0018s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0005s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0004s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000389s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000641s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001040s ]
+
+[ 2015-04-13T10:10:08+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001498s ]
+
+[ 2015-04-13T10:10:08+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001454s ]
+
+[ 2015-04-13T10:10:26+08:00 ] 127.0.0.1 /CMS2.0/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001445s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0003s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0002s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000408s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000643s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000986s ]
+
+[ 2015-04-13T10:10:26+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2015-04-13T10:10:26+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001573s ]
+
+[ 2015-04-13T10:10:55+08:00 ] 127.0.0.1 /CMS2.0/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0003s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0006s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0002s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000408s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000648s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2015-04-13T10:10:55+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002366s ]
+
+[ 2015-04-13T10:10:55+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001145s ]
+
+[ 2015-04-13T10:11:12+08:00 ] 127.0.0.1 /CMS2.0/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0013s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0005s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0003s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000463s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000752s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007603s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001234s ]
+
+[ 2015-04-13T10:11:13+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001255s ]
+
+[ 2015-04-13T10:11:13+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001170s ]
+
+[ 2015-04-13T10:32:57+08:00 ] 127.0.0.1 /CMS2.0/aa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+ERR: 无法加载控制器:Aa
+
+[ 2015-04-13T10:34:47+08:00 ] 127.0.0.1 /CMS2.0/aa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000960s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005618s ]
+ERR: 无法加载控制器:Aa
+
+[ 2015-04-13T10:39:40+08:00 ] 127.0.0.1 /CMS2.0./Uploads/2015-04-13/ad_552b2c6cbc4cc.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+
+[ 2015-04-13T10:55:22+08:00 ] 127.0.0.1 /CMS2.0/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002189s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `cms_ad` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0005s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0002s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0002s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000448s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000712s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007211s ]
+
+[ 2015-04-13T10:55:23+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001368s ]
+
+[ 2015-04-13T10:55:23+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001355s ]
+
+[ 2015-04-13T10:55:55+08:00 ] 127.0.0.1 /CMS2.0/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `cms_ad` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0047s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0003s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0006s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0003s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000412s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000642s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001373s ]
+
+[ 2015-04-13T10:55:55+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001746s ]
+
+[ 2015-04-13T10:55:55+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001474s ]
+
+[ 2015-04-13T10:56:05+08:00 ] 127.0.0.1 /CMS2.0/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001575s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `cms_ad` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0006s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0002s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0002s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000392s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000633s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001219s ]
+
+[ 2015-04-13T10:56:06+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001166s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001401s ]
+
+[ 2015-04-13T10:56:06+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001226s ]
+
+[ 2015-04-13T11:00:21+08:00 ] 127.0.0.1 /CMS2.0/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `cms_ad` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0022s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0003s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0002s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000450s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000694s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001203s ]
+
+[ 2015-04-13T11:00:21+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001371s ]
+
+[ 2015-04-13T11:00:21+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001408s ]
+
+[ 2015-04-13T11:00:28+08:00 ] 127.0.0.1 /CMS2.0/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004794s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `cms_ad` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0003s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0005s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0004s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0002s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000461s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000919s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087294s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001203s ]
+
+[ 2015-04-13T11:00:29+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002736s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003086s ]
+
+[ 2015-04-13T11:00:29+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001398s ]
+
+[ 2015-04-13T11:01:01+08:00 ] 127.0.0.1 /CMS2.0/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `cms_ad` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0011s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0015s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0003s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000597s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001026s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001218s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001419s ]
+
+[ 2015-04-13T11:01:02+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001538s ]
+
+[ 2015-04-13T11:01:02+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001096s ]
+
+[ 2015-04-13T12:03:02+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003342s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0053s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0098s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='17' WHERE `id` = 10 [ RunTime:0.0006s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 190 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 226 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0314s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0038s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=10 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=10 AND state=1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000484s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001239s ]
+
+[ 2015-04-13T12:07:45+08:00 ] 127.0.0.1 /CMS2.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001717s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `cms_ad` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0003s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0005s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0011s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0005s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0002s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0004s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000469s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000714s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001302s ]
+
+[ 2015-04-13T12:07:46+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001209s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001453s ]
+
+[ 2015-04-13T12:07:46+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001494s ]
+
+[ 2015-04-13T12:07:49+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0061s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0055s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0425s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='10' WHERE `id` = 7 [ RunTime:0.0017s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 190 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 226 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0038s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=7 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=7 AND state=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000526s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001282s ]
+
+[ 2015-04-13T12:09:22+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001604s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0044s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='11' WHERE `id` = 7 [ RunTime:0.0005s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 190 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 226 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0038s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=7 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=7 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000533s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001252s ]
+
+[ 2015-04-13T12:09:33+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0044s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='12' WHERE `id` = 7 [ RunTime:0.0005s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 190 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 226 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0036s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=7 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=7 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000272s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000517s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002168s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002421s ]
+
+[ 2015-04-13T12:09:35+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0047s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='13' WHERE `id` = 7 [ RunTime:0.0004s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 190 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 226 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0045s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=7 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=7 AND state=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000467s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000844s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001481s ]
+
+[ 2015-04-13T12:09:36+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001443s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0077s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='14' WHERE `id` = 7 [ RunTime:0.0005s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 190 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 226 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0064s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=7 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=7 AND state=1 ) LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000548s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002048s ]
+
+[ 2015-04-13T12:10:31+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0064s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='15' WHERE `id` = 7 [ RunTime:0.0004s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 190 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 226 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0036s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=7 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=7 AND state=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000545s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001301s ]
+
+[ 2015-04-13T12:10:32+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001445s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0045s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='16' WHERE `id` = 7 [ RunTime:0.0012s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 190 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 226 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0051s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=7 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=7 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000296s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000545s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001196s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001402s ]
+
+[ 2015-04-13T12:11:03+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001717s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0053s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='17' WHERE `id` = 7 [ RunTime:0.0005s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 190 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 226 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0041s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=7 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=7 AND state=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001596s ]
+
+[ 2015-04-13T12:11:38+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001592s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0053s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='18' WHERE `id` = 7 [ RunTime:0.0004s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 190 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 226 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0042s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=7 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=7 AND state=1 ) LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000251s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000469s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001280s ]
+
+[ 2015-04-13T12:12:20+08:00 ] 127.0.0.1 /CMS2.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001342s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `cms_ad` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0012s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0006s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0002s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000486s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000723s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001446s ]
+
+[ 2015-04-13T12:12:20+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001209s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001448s ]
+
+[ 2015-04-13T12:12:20+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001666s ]
+
+[ 2015-04-13T12:12:22+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002162s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0076s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0042s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='14' WHERE `id` = 6 [ RunTime:0.0005s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 190 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 226 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0098s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=6 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=6 AND state=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000506s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001314s ]
+
+[ 2015-04-13T12:13:45+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001867s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0043s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='15' WHERE `id` = 6 [ RunTime:0.0004s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 190 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 226 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0046s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=6 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=6 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000491s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001145s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001348s ]
+
+[ 2015-04-13T12:18:10+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0041s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='16' WHERE `id` = 6 [ RunTime:0.0016s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 190 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 226 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0042s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=6 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=6 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000499s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001111s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001317s ]
+
+[ 2015-04-13T12:18:12+08:00 ] 127.0.0.1 /CMS2.0/Home/Chapter/searchChapter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000382s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001206s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001375s ]
+
+[ 2015-04-13T12:26:21+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001274s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0041s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='17' WHERE `id` = 6 [ RunTime:0.0004s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 190 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 226 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0041s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=6 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=6 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000527s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001247s ]
+
+[ 2015-04-13T12:26:50+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchKeyword/keyword/%E4%B8%AD%E5%9B%BD.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+ERR: 非法操作:searchKeyword
+
+[ 2015-04-13T12:28:44+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0039s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='18' WHERE `id` = 6 [ RunTime:0.0005s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 195 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 231 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0037s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=6 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=6 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000276s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000521s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001441s ]
+
+[ 2015-04-13T12:28:46+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchKeyword/keyword/%E4%B8%AD%E5%9B%BD.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001337s ]
+
+[ 2015-04-13T12:29:02+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001307s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0044s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='19' WHERE `id` = 6 [ RunTime:0.0004s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 195 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 231 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0039s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=6 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=6 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000536s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048206s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002137s ]
+
+[ 2015-04-13T12:29:04+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchKeyword/keyword/%E5%8F%8D%E5%88%B6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002326s ]
+
+[ 2015-04-13T12:29:32+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchKeyword/keyword/%E5%8F%8D%E5%88%B6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001439s ]
+
+[ 2015-04-13T12:39:05+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0068s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='20' WHERE `id` = 6 [ RunTime:0.0005s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 212 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 248 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0039s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=6 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=6 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000292s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000527s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001143s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001352s ]
+
+[ 2015-04-13T12:39:07+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchKeyword/tag/%E4%B8%AD%E5%9B%BD.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002173s ]
+ERR: 非法操作:searchKeyword
+
+[ 2015-04-13T12:40:12+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchKeyword/tag/%E4%B8%AD%E5%9B%BD.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+ERR: 非法操作:searchKeyword
+
+[ 2015-04-13T12:40:57+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchKeyword/tag/%E4%B8%AD%E5%9B%BD.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+ERR: 非法操作:searchKeyword
+
+[ 2015-04-13T12:41:00+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchKeyword/tag/%E4%B8%AD%E5%9B%BD.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+ERR: 非法操作:searchKeyword
+
+[ 2015-04-13T12:41:00+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchKeyword/tag/%E4%B8%AD%E5%9B%BD.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+ERR: 非法操作:searchKeyword
+
+[ 2015-04-13T12:41:08+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001725s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0038s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='21' WHERE `id` = 6 [ RunTime:0.0004s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 212 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 248 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0043s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=6 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=6 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000280s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000511s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047858s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001259s ]
+
+[ 2015-04-13T12:41:10+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchTag/tag/%E4%B8%AD%E5%9B%BD.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0061s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'count' in 'field list'
+
+[ 2015-04-13T12:42:04+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchTag/tag/%E4%B8%AD%E5%9B%BD.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0038s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'count' in 'field list'
+
+[ 2015-04-13T12:42:04+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchTag/tag/%E4%B8%AD%E5%9B%BD.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001217s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0052s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'count' in 'field list'
+
+[ 2015-04-13T12:42:36+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchTag/tag/%E4%B8%AD%E5%9B%BD.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`count` FROM `cms_tag` WHERE `name` = '中国' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `cms_tag` (`name`) VALUES ('中国') [ RunTime:0.2467s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0059s ]
+SQL: SELECT a.id,a.name,a.info,a.thumb,b.name as navName FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id AND a.tag like '%中国%'  ) ORDER BY date DESC  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000446s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001247s ]
+
+[ 2015-04-13T12:42:41+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002315s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0039s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='22' WHERE `id` = 6 [ RunTime:0.0004s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 212 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 248 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0038s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=6 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=6 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000481s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001303s ]
+
+[ 2015-04-13T12:42:45+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchTag/tag/%E5%8F%8D%E5%88%B6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001355s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0058s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0061s ]
+SQL: SELECT `id`,`count` FROM `cms_tag` WHERE `name` = '反制' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_tag` (`name`) VALUES ('反制') [ RunTime:0.2313s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0048s ]
+SQL: SELECT a.id,a.name,a.info,a.thumb,b.name as navName FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id AND a.tag like '%反制%'  ) ORDER BY date DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001451s ]
+
+[ 2015-04-13T12:43:07+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchTag/tag/%E5%8F%8D%E5%88%B6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0051s ]
+SQL: SELECT `id`,`count` FROM `cms_tag` WHERE `name` = '反制' LIMIT 1   [ RunTime:0.0015s ]
+SQL: UPDATE `cms_tag` SET `count`='2' WHERE `id` = 2 [ RunTime:0.1205s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0046s ]
+SQL: SELECT a.id,a.name,a.info,a.thumb,b.name as navName FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id AND a.tag like '%反制%'  ) ORDER BY date DESC  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000449s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001530s ]
+
+[ 2015-04-13T12:49:12+08:00 ] 127.0.0.1 /CMS2.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001582s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `cms_ad` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`name`,`count` FROM `cms_tag` ORDER BY count DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0015s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0005s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0007s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0004s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0003s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000382s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000614s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001269s ]
+
+[ 2015-04-13T12:49:13+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001396s ]
+
+[ 2015-04-13T12:49:13+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001945s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001704s ]
+
+[ 2015-04-13T12:49:16+08:00 ] 127.0.0.1 /CMS2.0/List/index/id/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cms_nav` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` ORDER BY sort DESC  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' AND `nav` IN ('25','26','27','28') ORDER BY date DESC LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('25','26','27','28') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: ids C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0041s ]
+SQL: SELECT a.id,a.name,a.info,a.thumb,b.name as navName FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id AND b.id in(28,27,25,26) )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000466s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001327s ]
+
+[ 2015-04-13T12:49:18+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001650s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0043s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='18' WHERE `id` = 21 [ RunTime:0.0004s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 212 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 248 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('28','27','25','26') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0037s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=21 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=21 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000277s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000626s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001086s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001568s ]
+
+[ 2015-04-13T12:49:25+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchTag/tag/%E5%91%A8%E6%B0%B8%E5%BA%B7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0091s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0067s ]
+SQL: SELECT `id`,`count` FROM `cms_tag` WHERE `name` = '周永康' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cms_tag` (`name`) VALUES ('周永康') [ RunTime:0.0940s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0041s ]
+SQL: SELECT a.id,a.name,a.info,a.thumb,b.name as navName FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id AND a.tag like '%周永康%'  ) ORDER BY date DESC  [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000448s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029893s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003796s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001215s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001425s ]
+
+[ 2015-04-13T12:49:32+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0054s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0048s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='23' WHERE `id` = 6 [ RunTime:0.0004s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 212 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 248 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0038s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=6 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=6 AND state=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000271s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000514s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001270s ]
+
+[ 2015-04-13T12:49:35+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchTag/tag/%E6%97%A5%E6%9C%AC.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002621s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0068s ]
+SQL: SELECT `id`,`count` FROM `cms_tag` WHERE `name` = '日本' LIMIT 1   [ RunTime:0.0019s ]
+SQL: INSERT INTO `cms_tag` (`name`) VALUES ('日本') [ RunTime:0.0744s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0043s ]
+SQL: SELECT a.id,a.name,a.info,a.thumb,b.name as navName FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id AND a.tag like '%日本%'  ) ORDER BY date DESC  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000456s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001565s ]
+
+[ 2015-04-13T12:49:40+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001662s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0043s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=26 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='13' WHERE `id` = 29 [ RunTime:0.0014s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=26 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 212 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=26 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 248 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('28','27','25','26') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0039s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=29 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=29 AND state=1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000528s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001368s ]
+
+[ 2015-04-13T12:49:43+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchTag/tag/%E4%BD%99%E7%A7%8B%E9%9B%A8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001446s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0055s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`count` FROM `cms_tag` WHERE `name` = '余秋雨' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_tag` (`name`) VALUES ('余秋雨') [ RunTime:0.1989s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0042s ]
+SQL: SELECT a.id,a.name,a.info,a.thumb,b.name as navName FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id AND a.tag like '%余秋雨%'  ) ORDER BY date DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000461s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001111s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001322s ]
+
+[ 2015-04-13T12:49:48+08:00 ] 127.0.0.1 /CMS2.0/Chapter/oneChapter/id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000803s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001472s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Home\Model\CommentModel::page() should be compatible with that of Think\Model::page() C:\wamp\www\CMS2.0\App\Home\Model\CommentModel.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`nav`,`keyword`,`tag`,`attr`,`author`,`info`,`content`,`thumb`,`color`,`read_count`,`limit`,`source`,`commend`,`date` FROM `cms_chapter` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`pid` FROM `cms_nav` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `cms_chapter` SET `read_count`='6' WHERE `id` = 9 [ RunTime:0.0009s ]
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: mainNav C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 212 行.
+SQL: SELECT `nav` FROM `cms_chapter` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `cms_nav` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: navChapter C:\wamp\www\CMS2.0\App\Home\Model\ChapterModel.class.php 第 248 行.
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `nav` IN ('2','3','4') ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_comment` [ RunTime:0.0041s ]
+SQL: SELECT a.id,a.user,a.content,a.create,a.support,a.oppose,b.face FROM cms_comment a,cms_user b WHERE ( a.cid=9 AND a.user=b.username AND a.state=1 ) ORDER BY a.create DESC LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_comment` WHERE ( cid=9 AND state=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000501s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001699s ]
+
+[ 2015-04-13T12:49:51+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchTag/tag/%E4%BC%A6%E6%95%A6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0053s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`count` FROM `cms_tag` WHERE `name` = '伦敦' LIMIT 1   [ RunTime:0.0041s ]
+SQL: INSERT INTO `cms_tag` (`name`) VALUES ('伦敦') [ RunTime:0.1898s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0041s ]
+SQL: SELECT a.id,a.name,a.info,a.thumb,b.name as navName FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id AND a.tag like '%伦敦%'  ) ORDER BY date DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000414s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001252s ]
+
+[ 2015-04-13T12:49:54+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchTag/tag/%E8%B4%A2%E5%AE%9D.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003034s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0086s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0072s ]
+SQL: SELECT `id`,`count` FROM `cms_tag` WHERE `name` = '财宝' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cms_tag` (`name`) VALUES ('财宝') [ RunTime:0.0540s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0055s ]
+SQL: SELECT a.id,a.name,a.info,a.thumb,b.name as navName FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id AND a.tag like '%财宝%'  ) ORDER BY date DESC  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000483s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001605s ]
+
+[ 2015-04-13T12:49:59+08:00 ] 127.0.0.1 /CMS2.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001290s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `cms_ad` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`count` FROM `cms_tag` ORDER BY count DESC LIMIT 0,7   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0004s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0002s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000380s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000632s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001275s ]
+
+[ 2015-04-13T12:49:59+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001671s ]
+
+[ 2015-04-13T12:49:59+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001878s ]
+
+[ 2015-04-13T12:53:35+08:00 ] 127.0.0.1 /CMS2.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001370s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `cms_ad` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`name`,`count` FROM `cms_tag` ORDER BY count DESC LIMIT 0,7   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0003s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0002s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000407s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000645s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001299s ]
+
+[ 2015-04-13T12:53:35+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001462s ]
+
+[ 2015-04-13T12:53:35+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000308s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001241s ]
+
+[ 2015-04-13T12:53:39+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchTag/tag/%E5%8F%8D%E5%88%B6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0058s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`count` FROM `cms_tag` WHERE `name` = '反制' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `cms_tag` SET `count`='3' WHERE `id` = 2 [ RunTime:0.0842s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0043s ]
+SQL: SELECT a.id,a.name,a.info,a.thumb,b.name as navName FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id AND a.tag like '%反制%'  ) ORDER BY date DESC  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000514s ]
+NOTIC: [8] Undefined variable: tags C:\wamp\www\CMS2.0\App\Runtime\Cache\Home\0c6702fe237d7dce0f1a34febf1f6b8a.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001945s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001752s ]
+
+[ 2015-04-13T12:53:42+08:00 ] 127.0.0.1 /CMS2.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001577s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `cms_ad` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`name`,`count` FROM `cms_tag` ORDER BY count DESC LIMIT 0,7   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0003s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0002s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000379s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000613s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001240s ]
+
+[ 2015-04-13T12:53:43+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003056s ]
+
+[ 2015-04-13T12:53:43+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000971s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001268s ]
+
+[ 2015-04-13T12:53:47+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchTag/tag/%E6%97%A5%E6%9C%AC.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002307s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`count` FROM `cms_tag` WHERE `name` = '日本' LIMIT 1   [ RunTime:0.0029s ]
+SQL: UPDATE `cms_tag` SET `count`='2' WHERE `id` = 4 [ RunTime:0.1070s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0053s ]
+SQL: SELECT a.id,a.name,a.info,a.thumb,b.name as navName FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id AND a.tag like '%日本%'  ) ORDER BY date DESC  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000451s ]
+NOTIC: [8] Undefined variable: tags C:\wamp\www\CMS2.0\App\Runtime\Cache\Home\0c6702fe237d7dce0f1a34febf1f6b8a.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001289s ]
+
+[ 2015-04-13T12:53:51+08:00 ] 127.0.0.1 /CMS2.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `cms_ad` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`name`,`count` FROM `cms_tag` ORDER BY count DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0003s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0002s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0002s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000383s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000618s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001254s ]
+
+[ 2015-04-13T12:53:52+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001208s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001456s ]
+
+[ 2015-04-13T12:53:52+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001283s ]
+
+[ 2015-04-13T12:53:57+08:00 ] 127.0.0.1 /CMS2.0/Chapter/searchTag/tag/%E8%B4%A2%E5%AE%9D.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001760s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0069s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`count` FROM `cms_tag` WHERE `name` = '财宝' LIMIT 1   [ RunTime:0.0017s ]
+SQL: UPDATE `cms_tag` SET `count`='2' WHERE `id` = 7 [ RunTime:0.3386s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0041s ]
+SQL: SELECT a.id,a.name,a.info,a.thumb,b.name as navName FROM cms_chapter a,cms_nav b WHERE ( a.nav=b.id AND a.tag like '%财宝%'  ) ORDER BY date DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000419s ]
+NOTIC: [8] Undefined variable: tags C:\wamp\www\CMS2.0\App\Runtime\Cache\Home\0c6702fe237d7dce0f1a34febf1f6b8a.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001144s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001357s ]
+
+[ 2015-04-13T12:54:00+08:00 ] 127.0.0.1 /CMS2.0/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002336s ]
+SQL: SHOW COLUMNS FROM `cms_nav` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `cms_user` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `cms_chapter` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `cms_vote` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `cms_ad` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `cms_tag` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`name`,`count` FROM `cms_tag` ORDER BY count DESC LIMIT 0,7   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE `pid` = 0 ORDER BY sort DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `username`,`face` FROM `cms_user` ORDER BY last_login DESC LIMIT 0,6   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `attr` LIKE '%推荐%' ORDER BY date DESC LIMIT 0,7   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE `date` BETWEEN '1427817600' AND '1430409599' ORDER BY read_count DESC LIMIT 0,4   [ RunTime:0.0012s ]
+SQL: SELECT ch.id,ch.name,ch.date FROM cms_chapter ch  ORDER BY(SELECT COUNT(*) FROM cms_comment co WHERE co.cid=ch.id ) DESC LIMIT 0,4  [ RunTime:0.0011s ]
+SQL: SELECT `id`,`name` FROM `cms_nav` WHERE ( pid=0 ) ORDER BY sort DESC LIMIT 0,4   [ RunTime:0.0011s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=1 ) ORDER BY sort DESC  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (3,2,4) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0005s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=14 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (28,27,25,26) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=9 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (30,31) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cms_nav` WHERE ( pid=8 ) ORDER BY sort DESC  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`date` FROM `cms_chapter` WHERE ( nav in (16,17,18) ) ORDER BY date DESC LIMIT 0,9   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title` FROM `cms_vote` WHERE ( pid=0 AND state=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`count` FROM `cms_vote` WHERE ( pid=7 )  [ RunTime:0.0002s ]
+SQL: SELECT SUM(count) AS tp_sum FROM `cms_vote` WHERE ( pid=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title`,`content`,`url` FROM `cms_ad`  [ RunTime:0.0003s ]
+SQL: SELECT `username`,`face` FROM `cms_user` WHERE `username` = 'hanfeng' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000452s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000692s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001247s ]
+
+[ 2015-04-13T12:54:01+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001088s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001330s ]
+
+[ 2015-04-13T12:54:01+08:00 ] 127.0.0.1 /CMS2.0/Verify/verify1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001437s ]
+
